@@ -1,0 +1,337 @@
+/* SASS File for Carolyn Larocque's Portfolio Website */
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600|Open+Sans:300,400');
+
+// Fonts
+$montserrat: 'Montserrat', Helvetica, sans-serif;
+$open-sans: 'Open Sans', Arial, sans-serif;
+
+// Colours
+$offwhite: #f8f8f8;
+$brown: #b69f87;
+$blue: #3b4055;
+
+// Basic Classes
+.hide {
+  display: none;
+}
+
+p {
+  font-family: $open-sans;
+}
+
+h1, h2, h3, h4 {
+  font-family: $montserrat;
+}
+
+// Custom Styling
+
+#mainNav {
+  height: 90px;
+  background-color: rgba(248,248,248,0.7);
+
+  .navbar-header {
+    height: 90px;
+
+    button {
+      margin-top: 25px;
+    }
+  }
+
+  .navLinks {
+    font-family: $montserrat;
+    font-weight: 200;
+    background-color: rgba(248,248,248,0.7);
+
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+    }
+  }
+
+  .navbar-nav {
+    margin: 0 -15px;
+  }
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+#mainBannerCon {
+  background: url(../../images/banner-image-mobile.jpg) no-repeat center;
+  height: 490px;
+
+  #bannerText {
+    margin-top: 170px;
+    text-align: center;
+
+    h3 {
+      font-weight: 600;
+      font-size: 72px !important;
+    }
+
+    #introText {
+      background-color: rgba(255,255,255,.3);
+      margin-top: 100px;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+  }
+}
+
+#portfolioCon {
+  background-color: $offwhite;
+  text-align: center;
+  padding: 50px 0;
+
+  h2 {
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .portfolioItem {
+    margin-bottom: 30px;
+  }
+
+  .projectLink {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+#projectLightbox {
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1000px;
+	background-color: rgba(255,255,255,0.8);
+  text-align: center;
+  padding-top: 200px;
+
+  #closeLB {
+    top: 0;
+  }
+
+  #lightboxContent {
+    padding-top: 200px;
+  }
+
+  h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  a {
+    background-color: $blue;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #fff;
+      color: $blue;
+      border: 2px solid $blue;
+    }
+  }
+}
+
+.showLightbox {
+  display: block;
+}
+
+.hideLightbox {
+  display: none;
+}
+
+#closeLB {
+	float: right;
+	margin-right: 18px;
+	margin-top: 12px;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.projectImage {
+	display: block;
+	margin: auto;
+	padding: 20px;
+}
+
+.projectInfo {
+	text-align: center;
+	font-size: 20px;
+}
+
+#aboutMeCon {
+  background-color: $brown;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+
+  h2 {
+    padding-bottom: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  p {
+    line-height: 24px;
+  }
+}
+
+#contactCon {
+  background-color: $offwhite;
+  padding: 50px 0;
+
+  h2 {
+    font-family: $montserrat;
+    padding-bottom: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  button {
+    background-color: $blue;
+    color: #fff;
+
+    &:hover {
+      background-color: $brown;
+      color: #fff;
+    }
+  }
+
+  #contactForm {
+    font-family: $open-sans;
+    font-weight: 300;
+
+    input {
+      border-radius: 0;
+      padding: 30px;
+      background-color: $offwhite;
+    }
+
+    textarea {
+      border-radius: 0;
+      padding: 20px 0 0 30px;
+      background-color: $offwhite;
+    }
+  }
+}
+
+footer {
+  background-color: $blue;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0 50px 0;
+
+  h3 {
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    font-weight: 600;
+  }
+
+  #socialLinks ul li {
+    width: 60px;
+    height: 40px;
+  }
+
+  .buttonIcon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+    color: white;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+
+    &:hover {
+      background-color: rgba(255,255,255,0.4);
+    }
+  }
+
+}
+
+#copyright {
+  background-color: $brown;
+  text-align: center;
+  color: #fff;
+  font-family: $open-sans;
+  font-weight: 300;
+  padding: 20px;
+
+  p {
+    padding-bottom: 10px;
+  }
+
+  a {
+    padding: 5px 10px;
+    background-color: #fff;
+    color: $brown;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $brown;
+      border: 1px #fff solid;
+      color: #fff;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #mainBannerCon {
+    background: url(../../images/banner-image-desktop.jpg) no-repeat center;
+    height: 585px;
+
+    #bannerText {
+      margin-top: 220px;
+      text-align: center;
+
+      h3 {
+        font-weight: 600;
+        font-size: 72px !important;
+        text-align: right;
+      }
+
+      #introText {
+        background-color: transparent;
+        margin-top: 35px;
+      }
+
+      p {
+        margin-bottom: 0;
+        font-size: 18px;
+        text-align: left;
+      }
+    }
+  }
+
+  .navLinks {
+    background-color: transparent !important;
+
+    &:hover {
+      background-color: $blue !important;
+      color: #fff;
+    }
+  }
+
+}
