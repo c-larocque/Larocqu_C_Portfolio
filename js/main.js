@@ -1,9 +1,6 @@
 (function () {
 
-//getting variables
-//var portfolioImages = document.querySelectorAll('.projectLink');
-
-function getAllData() {
+  function getAllData() {
   let url = './includes/functions.php?all_work=true';
 
   fetch(url)
@@ -55,32 +52,13 @@ function getProjectData() {
 
     // open lightbox here
     let lightbox = document.querySelector('#projectLightbox');
-    lightbox.classList.add('showLightbox');
+    lightbox.addEventListener('click', function() { lightbox.classList.add('showLightbox'); }, false);
 
+    // close lightbox here
     let lightboxClose = document.querySelector('.closeLightbox');
-    lightboxClose.classList.remove('showLightbox');
+    lightboxClose.addEventListener('click', function() { lightboxClose.classList.remove('showLightbox'); }, false);
   }
 
-  /*portfolioImages.forEach(function(image, index){
-    //event handler, forEach image to call getProjectData function
-    image.addEventListener('click', getProjectData, false);
-    image.addEventListener('click', popLightbox, false);
-  });
-
-  function closeLightbox() {
-    // Reset everything, close the lightbox
-    //debugger;
-
-    let lightbox = document.querySelector('#projectLightbox');
-    let lightboxClose = document.querySelector('#closeLightbox');
-
-    lightbox.style.display = "none";
-    document.body.style.overflow = "visible";
-
-    projectImage.src = "";
-    projectInfo.innerHTML = "";
-    projectName.textContent = "";
-  }*/
 
   getAllData();
 
