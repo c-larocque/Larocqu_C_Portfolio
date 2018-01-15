@@ -18,10 +18,10 @@ error_reporting(E_ALL);
 }
 
   // get a single row (one result) using a query parameter
-  if (isset($_GET['projects_name'])) { //check to see if there's a parameter called projects_name
-   $projectName = $_GET['projects_name'];
+  if (isset($_GET['projectsId'])) { //check to see if there's a parameter called projects_name
+   $projectId = $_GET['projectsId'];
 
-   $myQuery = "SELECT * FROM tbl_projects WHERE projects_name = '$projectName'";
+   $myQuery = "SELECT * FROM tbl_projects WHERE projects_id = '$projectId'";
    $result = mysqli_query($link, $myQuery);
 
    $row = mysqli_fetch_assoc($result);
