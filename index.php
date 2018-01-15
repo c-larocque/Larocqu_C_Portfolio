@@ -97,20 +97,20 @@
       </div>
     </section>
 
-     <!-- Portfolio Lightbox -->
-     <div id="projectLightbox" class="showLightbox">
-       <i class="fa fa-times" aria-hidden="true" id="closeLB" class="closeLightbox"></i>
-       <div id="lightboxContent">
-         <div class="row">
-           <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-             <h2 class="projectName">Project Name</h2>
-             <img src="images/placeholder_preview.jpg" alt="Project Image" class="projectImage">
-             <p class="projectInfo">Project Information</p>
-             <a href="#">LEARN MORE ></a>
-           </div>
-         </div>
-       </div>
-     </div>
+    <!-- Portfolio Lightbox -->
+    <div id="projectLightbox" class="container">
+      <i class="fa fa-times" aria-hidden="true" id="closeLB" class="closeLightbox"></i>
+      <div id="lightboxContent">
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+            <h2 class="projectName">Project Name</h2>
+            <img src="images/default.jpg" alt="Project Image" class="projectImage img-responsive">
+            <p class="projectInfo">Project Information</p>
+            <a href="http://carolynlarocque.com/#portfolioCon">LEARN MORE ></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
      <!-- About Me Section -->
      <section class="container-fluid" id="aboutMeCon">
@@ -118,7 +118,7 @@
          <div class="row">
            <div class="col-xs-12 col-md-10 col-md-offset-1">
              <h2>Who is Carolyn?</h2>
-             <p>Hi there, I'm Carolyn! I am a 22-year-old student currently finishing my last year in a collaborative program split between Western University and Fanshawe College called Media Theory and Production. Being an Alberta raised girl I can always find the beauty in everything my in surroundings. I am excited by learning new things and taking my skills to another level. Web development. Graphic design. Branding collateral. These are just a few of the areas I have experience in.</p>
+             <p>Hi there, I'm Carolyn! I am a 22-year-old student currently finishing my last year in a collaborative program split between Western University and Fanshawe College called Media Theory and Production. Following graduation, I will hold a Bachelor of Arts in Media Information and Technoculture from Western University, and an Ontario College Diploma in Interactive Media Design from Fanshawe College. Being an Alberta raised girl I can always find the beauty in whatever my surroundings may be. I am excited by learning new things and taking my skills to another level. Web development. Graphic design. Branding collateral. These are just a few of the areas I have experience in.</p>
            </div>
          </div>
        </div>
@@ -162,16 +162,16 @@
            <h3>Find Me Online</h3>
            <ul class="list-inline">
              <li>
-               <a target="_blank" href="http://www.carolynlarocque.com/index.php" class="buttonIcon"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
+               <a target="_blank" href="https://twitter.com/carolynlarocque" class="buttonIcon"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
              </li>
              <li>
-               <a target="_blank" href="http://www.carolynlarocque.com/index.php" class="buttonIcon"><span class="sr-only">Instagram</span><i class="fa fa-fw fa-instagram"></i></a>
+               <a target="_blank" href="https://www.instagram.com/carolynlarocque/" class="buttonIcon"><span class="sr-only">Instagram</span><i class="fa fa-fw fa-instagram"></i></a>
              </li>
              <li>
-               <a target="_blank" href="http://www.carolynlarocque.com/index.php" class="buttonIcon"><span class="sr-only">LinkedIn</span><i class="fa fa-fw fa-linkedin"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/carolyn-larocque-45525b13b/" class="buttonIcon"><span class="sr-only">LinkedIn</span><i class="fa fa-fw fa-linkedin"></i></a>
              </li>
              <li>
-               <a target="_blank" href="http://www.carolynlarocque.com/index.php" class="buttonIcon"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
+               <a target="_blank" href="https://github.com/c-larocque" class="buttonIcon"><span class="sr-only">GitHub</span><i class="fa fa-fw fa-github"></i></a>
              </li>
            </ul>
          </div>

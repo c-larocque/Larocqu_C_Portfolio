@@ -1,8 +1,5 @@
 (function () {
 
-//getting variables
-//var portfolioImages = document.querySelectorAll('.projectLink');
-
 function getAllData() {
   let url = './includes/functions.php?all_work=true';
 
@@ -32,7 +29,7 @@ function generateThumbs(data) {
 }
 
 function getProjectData() {
-  event.preventDefault();
+  //event.preventDefault();
 
     const url = './includes/functions.php?projectsId=' + this.id;
 
@@ -47,40 +44,20 @@ function getProjectData() {
 
   function processProjectResult(data) {
     //deconstruct the data and extract only what we need
-    const { projects_id, projects_name, projects_info, projects_image } = data;
+    const { projects_id, projects_name, projects_info, projects_lightboximage } = data;
 
     let projectName = document.querySelector('.projectName').textContent = projects_name;
     let projectInfo = document.querySelector('.projectInfo').innerHTML = projects_info;
-    let projectImage = document.querySelector('.projectImage').src = "images/"+projects_image;
+    let projectImage = document.querySelector('.projectImage').src = "images/"+projects_lightboximage;
 
     // open lightbox here
     let lightbox = document.querySelector('#projectLightbox');
     lightbox.classList.add('showLightbox');
 
-    let lightboxClose = document.querySelector('.closeLightbox');
-    lightboxClose.classList.remove('showLightbox');
+    // close lightbox here
+    let lightboxClose = document.querySelector('#closeLB');
+    lightboxClose.addEventListener('click', function() { lightbox.classList.remove('showLightbox'); }, false);
   }
-
-  /*portfolioImages.forEach(function(image, index){
-    //event handler, forEach image to call getProjectData function
-    image.addEventListener('click', getProjectData, false);
-    image.addEventListener('click', popLightbox, false);
-  });
-
-  function closeLightbox() {
-    // Reset everything, close the lightbox
-    //debugger;
-
-    let lightbox = document.querySelector('#projectLightbox');
-    let lightboxClose = document.querySelector('#closeLightbox');
-
-    lightbox.style.display = "none";
-    document.body.style.overflow = "visible";
-
-    projectImage.src = "";
-    projectInfo.innerHTML = "";
-    projectName.textContent = "";
-  }*/
 
   getAllData();
 
