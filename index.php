@@ -1,7 +1,7 @@
 <?php
   //Error reporting for MAMP and WAMP - REMOVE THIS BEFORE PLACING ON LIVE SITE
-  ini_set('display_errors',1);
-  error_reporting(E_ALL);
+  //ini_set('display_errors',1);
+  //error_reporting(E_ALL);
 
   require_once("admin/scripts/mail.php");
 
